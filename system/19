@@ -1,0 +1,15 @@
+sustemctl list-unit-files --type=service | grep "enabled" | awk -F' .service' ' {print $1}'
+
+Example:
+
+autovt@
+console-setup
+cron
+getty@
+keyboard-setup
+networking
+rsyslog
+ssh
+sshd
+system-timesyncd
+ufw
